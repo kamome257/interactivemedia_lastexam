@@ -12041,14 +12041,4 @@ textarea.form-control-lg {
   }
 }
 
-/* ハンバーガーアイコンを常に表示 */
-.navbar-toggler {
-  display: block !important;
-}
-
-/* navbar-expand-* の場合、デフォルトで非表示になるのを上書き */
-.navbar-expand-md .navbar-toggler {
-  display: block !important;
-}
-
- /*# sourceMappingURL=bootstrap.css.map */
+/*# sourceMappingURL=bootstrap.css.map */
