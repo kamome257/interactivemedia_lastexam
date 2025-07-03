@@ -7,6 +7,7 @@
   <script src="bootstrap.js"></script>
   <title>イベントスケジュール</title>
   <style>
+    
     .timetable-horizontal {
       display: none;
       overflow-x: auto;
@@ -22,6 +23,7 @@
       border: 1px solid #ccc;
       text-align: center;
       min-width: 120px;
+      max-width: 120px;
       height: 60px;
     }
     .timetable-vertical {
@@ -47,17 +49,75 @@
       .timetable-horizontal { display: none; }
       .timetable-vertical { display: block; }
     }
+     
+    .main-visual-0 {
+      background-color: rgba(0, 0, 0, 0.6); 
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      /* 参考URL：
+      https://developer.mozilla.org/ja/docs/Web/CSS/background-color
+      https://developer.mozilla.org/ja/docs/Web/CSS/padding
+      https://developer.mozilla.org/ja/docs/Learn/CSS/Building_blocks/Values_and_units */
+    }
+    .main-visual-1 {
+      background-image: url(./img/background.jpeg); 
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      /* 参考URL：
+      https://developer.mozilla.org/ja/docs/Web/CSS/background-image */
+    }
+    .main-visual-2 {
+      background-image: url(./img/background.jpeg); 
+      background-size: cover;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      /* 参考URL：
+      https://developer.mozilla.org/ja/docs/Web/CSS/background-size */
+    }
+    .main-visual-3 {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./img/background.jpeg); 
+      background-size: cover;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      /* 参考URL：
+      https://developer.mozilla.org/ja/docs/Web/CSS/linear-gradient() */
+    }
+    .main-visual-4 {
+      background: linear-gradient(135deg, rgba(255, 0, 161, .8), rgba(4, 51, 255, .6)), url(./img/background.jpeg); 
+      background-size: cover;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      /* 参考URL：
+      https://developer.mozilla.org/ja/docs/Web/CSS/linear-gradient() */
+    }
+    .main-visual-5 {
+      background: linear-gradient(25deg, rgba(255, 194, 52, 0.8), rgba(255, 86, 53, 0.8)), url(./img/background.jpeg); 
+      background-size: cover; 
+      /*clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%);　*/
+      padding-top: 3rem;
+      padding-bottom: 5rem;
+      /* 参考URL：
+      https://developer.mozilla.org/ja/docs/Web/CSS/clip-path */
+    }
+  </style>
+  <div class="mt-5 text-white main-visual-5">
+    <div class="container">
+      <h1 class="display-3">イベントスケジュール</h1>
+      <p></p>      
+     
+    </div>
+  </div>
   </style>
 </head>
 <body>
   <!-- index.htmlと同じヘッダー -->
   <!-- <nav class="navbar navbar-expand-md navbar-dark bg-dark"> -->
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <div class="container-fluid"> 
+   <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Navbar</a>
+      <a class="navbar-brand" href="index.html"><img src="./img/icon.jpeg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top"></a>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
@@ -67,7 +127,7 @@
             <a class="nav-link" href="index.html">学部・学科紹介</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html">アクセス</a>
+            <a class="nav-link" href="acsess.html">アクセス</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="index.html"></a>
@@ -80,7 +140,7 @@
   <div style="height: 70px;"></div> <!-- ヘッダー分の余白 -->
 
   <div class="container mt-4">
-    <h2 class="mb-4">1日のイベントスケジュール</h2>
+    <h2 class="mb-4"></h2>
     <!-- 横スクロール（PC・タブレット横向き） -->
     <div class="timetable-horizontal">
       <table>
@@ -95,14 +155,14 @@
           <th>17:00</th>
         </tr>
         <tr>
-          <td><a href="event1.html">&nbsp;</a></td>
-          <td><a href="event2.html">&nbsp;</a></td>
-          <td><a href="event3.html">&nbsp;</a></td>
-          <td><a href="event4.html">&nbsp;</a></td>
-          <td><a href="event5.html">&nbsp;</a></td>
-          <td><a href="event6.html">&nbsp;</a></td>
-          <td><a href="event7.html">&nbsp;</a></td>
-          <td><a href="event8.html">&nbsp;</a></td>
+          <td><a href="login.html">&nbsp;</a></td>
+          <td><a href="login.html"><img src="./img/event1.png"></a></td>
+          <td><a href="login.html">&nbsp;</a></td>
+          <td><a href="login.html">&nbsp;</a></td>
+          <td><a href="login.html">&nbsp;</a></td>
+          <td><a href="login.html">&nbsp;</a></td>
+          <td><a href="login.html">&nbsp;</a></td>
+          <td><a href="login.html">&nbsp;</a></td>
         </tr>
       </table>
     </div>
@@ -119,7 +179,6 @@
         <tr><th>17:00</th><td><a href="event8.html">&nbsp;</a></td></tr>
       </table>
     </div>
-    <p class="mt-3 text-muted">※空白部分をクリックするとイベント詳細ページに遷移します。</p>
   </div>
 </body>
 </html>
