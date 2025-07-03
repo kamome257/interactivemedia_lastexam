@@ -14,27 +14,27 @@
 <body>
   <!-- <nav class="navbar navbar-expand-md navbar-dark bg-dark"> -->
   <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <div class="container-fluid"> 
+    <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Navbar</a>
+      <a class="navbar-brand" href="index.html"><img src="./img/icon.jpeg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top"></a>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="./schedule.html">イベントスケジュール</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html">二つ目の項目</a>
+            <a class="nav-link" href="index.html">学部・学科紹介</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html">三つ目の項目</a>
+            <a class="nav-link" href="acsess.html">アクセス</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html">四つ目の項目</a>
+            <a class="nav-link" href="index.html"></a>
           </li>
         </ul>
-        <button class="btn btn-outline-light" onclick="location.href='login.html'" role="button">Login</button>
+        <button class="btn btn-outline-light" onclick="location.href='login.html'" role="button">入場予約</button>
       </div>
     </div>
   </nav>
@@ -50,14 +50,14 @@
       https://developer.mozilla.org/ja/docs/Learn/CSS/Building_blocks/Values_and_units */
     }
     .main-visual-1 {
-      background-image: url(./img/main-visual.jpeg); 
+      background-image: url(./img/background.jpeg); 
       padding-top: 3rem;
       padding-bottom: 3rem;
       /* 参考URL：
       https://developer.mozilla.org/ja/docs/Web/CSS/background-image */
     }
     .main-visual-2 {
-      background-image: url(./img/main-visual.jpeg); 
+      background-image: url(./img/background.jpeg); 
       background-size: cover;
       padding-top: 3rem;
       padding-bottom: 3rem;
@@ -65,7 +65,7 @@
       https://developer.mozilla.org/ja/docs/Web/CSS/background-size */
     }
     .main-visual-3 {
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./img/main-visual.jpeg); 
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./img/background.jpeg); 
       background-size: cover; 
       padding-top: 3rem;
       padding-bottom: 3rem;
@@ -73,17 +73,17 @@
       https://developer.mozilla.org/ja/docs/Web/CSS/linear-gradient() */
     }
     .main-visual-4 {
-      background: linear-gradient(135deg, rgba(255, 0, 161, .8), rgba(4, 51, 255, .6)), url(./img/main-visual.jpeg); 
-      background-size: cover; 
+      background: linear-gradient(135deg, rgba(255, 0, 161, .8), rgba(4, 51, 255, .6)), url(./img/background.jpeg); 
+      background-size: cover;
       padding-top: 3rem;
       padding-bottom: 3rem;
       /* 参考URL：
       https://developer.mozilla.org/ja/docs/Web/CSS/linear-gradient() */
     }
     .main-visual-5 {
-      background: linear-gradient(25deg, rgba(255, 190, 44, 0.8), rgba(255, 44, 171, 0.8)), url(./img/main-visual.jpeg); 
+      background: linear-gradient(25deg, rgba(255, 190, 44, 0.8), rgba(255, 44, 171, 0.8)), url(./img/background.jpeg); 
       background-size: cover; 
-      clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%);
+      /*clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%);　*/
       padding-top: 3rem;
       padding-bottom: 5rem;
       /* 参考URL：
@@ -94,7 +94,7 @@
     <div class="container">
       <h1 class="display-3">Main Visual</h1>
       <p>ページ上部に配置された大きな画像は観賞者に強い印象を与えます。この領域に配置された画像を、メインビジュアル、キービジュアル、ヒーローイメージなどと呼びます。Bootstrapではcontainerやp-5といったclass属性で確保される領域に画像を挿入することでメインビジュアルを表示できます。</p>      
-      <a class="btn btn-outline-light btn-lg" href="https://www.google.com/" role="button">詳しくみる &raquo;</a>
+      <a class="btn btn-outline-light btn-lg" href="./login.html" role="button">入場予約 &raquo;</a>
     </div>
   </div>
 
@@ -114,7 +114,17 @@
     <div class="row">
       <div class="col-12 col-sm-6 col-md-4">
         <div class="card mb-5 border-0 text-center">
-          <img class="card-img-top img-clipping-1" src="./img/seaside.jpeg" alt="Card image cap">
+          <a href="schedule.html"><img class="card-img-top img-clipping-1" src="./img/chalender.jpeg" alt="Card image cap"></a>
+          <div class="card-body">
+            <h5 class="card-title text-primary">Card Component</h5>
+            <p class="card-text">Webデザインでは同種のコンテンツを複数並べて配置することが多いため、Bootstrapでは矩形領域を反復配置するためにcardというclass属性が定義されています。</p>
+            <a href="schedule.html" class="btn btn-primary">スケジュールを見る</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card mb-5 border-0 text-center">
+          <a href="#"><img class="card-img-top img-clipping-1" src="./img/food.jpeg" alt="Card image cap"></a>
           <div class="card-body">
             <h5 class="card-title text-primary">Card Component</h5>
             <p class="card-text">Webデザインでは同種のコンテンツを複数並べて配置することが多いため、Bootstrapでは矩形領域を反復配置するためにcardというclass属性が定義されています。</p>
@@ -124,21 +134,11 @@
       </div>
       <div class="col-12 col-sm-6 col-md-4">
         <div class="card mb-5 border-0 text-center">
-          <img class="card-img-top img-clipping-1" src="./img/food.jpeg" alt="Card image cap">
+          <a href="acsess.html"><img class="card-img-top img-clipping-1" src="./img/train.jpeg" alt="Card image cap"></a>
           <div class="card-body">
             <h5 class="card-title text-primary">Card Component</h5>
             <p class="card-text">Webデザインでは同種のコンテンツを複数並べて配置することが多いため、Bootstrapでは矩形領域を反復配置するためにcardというclass属性が定義されています。</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4">
-        <div class="card mb-5 border-0 text-center">
-          <img class="card-img-top img-clipping-1" src="./img/coffee.jpeg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title text-primary">Card Component</h5>
-            <p class="card-text">Webデザインでは同種のコンテンツを複数並べて配置することが多いため、Bootstrapでは矩形領域を反復配置するためにcardというclass属性が定義されています。</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <a href="acsess.html" class="btn btn-primary">アクセスマップ</a>
           </div>
         </div>
       </div>
