@@ -2,8 +2,3 @@
 .navbar-toggler {
   display: block !important;
 }
-
-/* navbar-expand-* の場合も常に表示 */
-.navbar-expand-md .navbar-toggler {
-  display: block !important;
-}
