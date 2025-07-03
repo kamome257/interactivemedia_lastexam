@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <title>イベントスケジュール</title>
+  <style>
+    .timetable-horizontal {
+      display: none;
+      overflow-x: auto;
+      white-space: nowrap;
+      width: 100%;
+    }
+    .timetable-horizontal table {
+      min-width: 900px;
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .timetable-horizontal th, .timetable-horizontal td {
+      border: 1px solid #ccc;
+      text-align: center;
+      min-width: 120px;
+      height: 60px;
+    }
+    .timetable-vertical {
+      display: block;
+      overflow-y: auto;
+      max-height: 70vh;
+      width: 100%;
+    }
+    .timetable-vertical table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .timetable-vertical th, .timetable-vertical td {
+      border: 1px solid #ccc;
+      text-align: center;
+      height: 60px;
+    }
+    @media (min-width: 768px) {
+      .timetable-horizontal { display: block; }
+      .timetable-vertical { display: none; }
+    }
+    @media (max-width: 767.98px) {
+      .timetable-horizontal { display: none; }
+      .timetable-vertical { display: block; }
+    }
+  </style>
+</head>
+<body>
+  <!-- index.htmlと同じヘッダー -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Navbar</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">一つ目の項目</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">二つ目の項目</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">三つ目の項目</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">四つ目の項目</a>
+          </li>
+        </ul>
+        <button class="btn btn-outline-light w-100 mb-2" onclick="location.href='login.html'" role="button">Login</button>
+      </div>
+    </div>
+  </nav>
+  <div style="height: 70px;"></div> <!-- ヘッダー分の余白 -->
+
+  <div class="container mt-4">
+    <h2 class="mb-4">1日のイベントスケジュール</h2>
+    <!-- 横スクロール（PC・タブレット横向き） -->
+    <div class="timetable-horizontal">
+      <table>
+        <tr>
+          <th>10:00</th>
+          <th>11:00</th>
+          <th>12:00</th>
+          <th>13:00</th>
+          <th>14:00</th>
+          <th>15:00</th>
+          <th>16:00</th>
+          <th>17:00</th>
+        </tr>
+        <tr>
+          <td><a href="event1.html">&nbsp;</a></td>
+          <td><a href="event2.html">&nbsp;</a></td>
+          <td><a href="event3.html">&nbsp;</a></td>
+          <td><a href="event4.html">&nbsp;</a></td>
+          <td><a href="event5.html">&nbsp;</a></td>
+          <td><a href="event6.html">&nbsp;</a></td>
+          <td><a href="event7.html">&nbsp;</a></td>
+          <td><a href="event8.html">&nbsp;</a></td>
+        </tr>
+      </table>
+    </div>
+    <!-- 縦スクロール（スマホ） -->
+    <div class="timetable-vertical">
+      <table>
+        <tr><th>10:00</th><td><a href="event1.html">&nbsp;</a></td></tr>
+        <tr><th>11:00</th><td><a href="event2.html">&nbsp;</a></td></tr>
+        <tr><th>12:00</th><td><a href="event3.html">&nbsp;</a></td></tr>
+        <tr><th>13:00</th><td><a href="event4.html">&nbsp;</a></td></tr>
+        <tr><th>14:00</th><td><a href="event5.html">&nbsp;</a></td></tr>
+        <tr><th>15:00</th><td><a href="event6.html">&nbsp;</a></td></tr>
+        <tr><th>16:00</th><td><a href="event7.html">&nbsp;</a></td></tr>
+        <tr><th>17:00</th><td><a href="event8.html">&nbsp;</a></td></tr>
+      </table>
+    </div>
+    <p class="mt-3 text-muted">※空白部分をクリックするとイベント詳細ページに遷移します。</p>
+  </div>
+</body>
+</html>
