@@ -1,6 +1,9 @@
+/* ハンバーガーメニュー（navbar-toggler）を常に表示 */
 .navbar-toggler {
-  margin-right: 2px;
+  display: block !important;
 }
-.navbar-brand {
-  margin-left: 4px !important;
+
+/* navbar-expand-* の場合も常に表示 */
+.navbar-expand-md .navbar-toggler {
+  display: block !important;
 }
